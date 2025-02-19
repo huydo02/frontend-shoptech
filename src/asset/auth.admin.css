@@ -1,0 +1,21 @@
+ .wrap-content {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: 0;
+     background-color: #fff;
+ }
+
+ .wrap-content .title {
+     padding: 20px;
+     font-size: 26px;
+     font-weight: 700;
+ }
+
+ .login-admin {
+     max-width: 600px;
+     width: 100%;
+     padding: 10px;
+ }
