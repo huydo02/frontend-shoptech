@@ -34,7 +34,7 @@ const CreateProduct = () => {
     try {
         useEffect(() => {
             const fetchApi = async () => {
-                await fetch("https://backend-shoptech.onrender.com//admin/list-product/create")
+                await fetch("https://backend-shoptech.onrender.com/admin/list-product/create")
                     .then(res => res.json())
                     .then(data => {
                         setCategory(data.categories);
@@ -67,7 +67,7 @@ const CreateProduct = () => {
             formData.append(key, values[key]);
         }
         try {
-            const res = await fetch("https://backend-shoptech.onrender.com//admin/list-product/create", {
+            const res = await fetch("https://backend-shoptech.onrender.com/admin/list-product/create", {
                 method: "POST",
                 body: formData,
             });
@@ -154,7 +154,7 @@ const CreateProduct = () => {
                                     <InputNumber style={{ width: '100%' }} min='0' />
                                 </Form.Item>
                                 {/* <Form.Item label="Hình ảnh" name="thumbnail" valuePropName="fileList" getValueFromEvent={normFile}>
-                                    <Upload name='thumbnail' action="https://backend-shoptech.onrender.com//admin/list-product/create" listType="picture-card">
+                                    <Upload name='thumbnail' action="https://backend-shoptech.onrender.com/admin/list-product/create" listType="picture-card">
                                         <button style={{ border: 0, background: 'none' }} type="button">
                                             <PlusOutlined />
                                             <div style={{ marginTop: 8 }}>Upload</div>

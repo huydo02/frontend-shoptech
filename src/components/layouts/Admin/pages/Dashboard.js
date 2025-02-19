@@ -13,7 +13,7 @@ const Dashboard = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const data = await fetch(`https://backend-shoptech.onrender.com//admin/dashboard`);
+                const data = await fetch(`https://backend-shoptech.onrender.com/admin/dashboard`);
                 const result = await data.json();
                 // Lấy dữ liệu order
                 setDataOrder(result.dataOrder)

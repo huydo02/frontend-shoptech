@@ -12,7 +12,7 @@ const CategoryCreate = () => {
     const role = useSelector((state) => state.admin.roles || {});
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//admin/list-category`);
+            const response = await fetch(`https://backend-shoptech.onrender.com/admin/list-category`);
             const data = await response.json();
             setCategories(data.categories);
             setLoading(false);
@@ -35,7 +35,7 @@ const CategoryCreate = () => {
     const onFinish = async (values) => {
         console.log('Success:', values);
         try {
-            const res = await fetch("https://backend-shoptech.onrender.com//admin/list-category/create", {
+            const res = await fetch("https://backend-shoptech.onrender.com/admin/list-category/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

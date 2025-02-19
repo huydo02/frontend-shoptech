@@ -17,7 +17,7 @@ const Oders = () => {
 
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//admin/orders`);
+            const response = await fetch(`https://backend-shoptech.onrender.com/admin/orders`);
             const data = await response.json();
             setOrders(data.dataOrders);
             setLoading(false);
@@ -34,7 +34,7 @@ const Oders = () => {
         console.log(status);
         try {
             const response = await fetch(
-                `https://backend-shoptech.onrender.com//admin/orders/edit-order/${id}`,
+                `https://backend-shoptech.onrender.com/admin/orders/edit-order/${id}`,
                 {
                     method: 'PATCH',
                     body: JSON.stringify({ status: status }),

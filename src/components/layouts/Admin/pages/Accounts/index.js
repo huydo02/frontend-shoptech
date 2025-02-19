@@ -16,7 +16,7 @@ const Accounts = () => {
 
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//admin/accounts`);
+            const response = await fetch(`https://backend-shoptech.onrender.com/admin/accounts`);
             const data = await response.json();
             setDataAccounts(data.data);
             setLoading(false);
@@ -33,7 +33,7 @@ const Accounts = () => {
     const handleDelete = async (record) => {
         try {
             const response = await fetch(
-                `https://backend-shoptech.onrender.com//admin/accounts/delete/${record._id}`,
+                `https://backend-shoptech.onrender.com/admin/accounts/delete/${record._id}`,
                 {
                     method: 'PATCH'
                 }

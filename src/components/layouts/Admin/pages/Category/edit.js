@@ -15,7 +15,7 @@ const EditCategory = () => {
     const role = useSelector((state) => state.admin.roles || {});
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//admin/list-category/edit/${idCategory.id}`);
+            const response = await fetch(`https://backend-shoptech.onrender.com/admin/list-category/edit/${idCategory.id}`);
             const data = await response.json();
             if (data.status === 'success') {
                 console.log(data.categories)
@@ -49,7 +49,7 @@ const EditCategory = () => {
     const onFinish = async (values) => {
         // console.log('Success:', values);
         try {
-            const res = await fetch(`https://backend-shoptech.onrender.com//admin/list-category/edit/${idCategory.id}`, {
+            const res = await fetch(`https://backend-shoptech.onrender.com/admin/list-category/edit/${idCategory.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

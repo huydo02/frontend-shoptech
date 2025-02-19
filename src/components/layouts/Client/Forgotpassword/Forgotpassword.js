@@ -9,7 +9,7 @@ const ForgotPassword = () => {
     const onFinish = async (values) => {
         console.log('Success:', values);
         try {
-            const res = await fetch("https://backend-shoptech.onrender.com//auth/password/forgot", {
+            const res = await fetch("https://backend-shoptech.onrender.com/auth/password/forgot", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

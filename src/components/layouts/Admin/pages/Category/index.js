@@ -16,7 +16,7 @@ const Categories = () => {
 
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//admin/list-category`);
+            const response = await fetch(`https://backend-shoptech.onrender.com/admin/list-category`);
             const data = await response.json();
             setCategories(data.categories);
             setLoading(false);
@@ -41,7 +41,7 @@ const Categories = () => {
     const handleDelete = async (record) => {
         try {
             const response = await fetch(
-                `https://backend-shoptech.onrender.com//admin/list-category/delete/${record._id}`,
+                `https://backend-shoptech.onrender.com/admin/list-category/delete/${record._id}`,
                 {
                     method: 'PATCH'
                 }

@@ -9,7 +9,7 @@ const Menu = () => {
     const menuRef = useRef(null);
     useEffect(() => {
         const fetchApi = async () => {
-            await fetch("https://backend-shoptech.onrender.com//menu")
+            await fetch("https://backend-shoptech.onrender.com/menu")
                 .then(res => res.json())
                 .then(data => {
                     setData(data);

@@ -19,7 +19,7 @@ const ChatBotAI = () => {
         console.log(newMessage)
         setChatMessage((prev) => [...prev, newMessage]);
         try {
-            const res = await fetch("https://backend-shoptech.onrender.com//chat/new", {
+            const res = await fetch("https://backend-shoptech.onrender.com/chat/new", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

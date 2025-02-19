@@ -11,7 +11,7 @@ const History = () => {
 
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//checkout/order/history`, {
+            const response = await fetch(`https://backend-shoptech.onrender.com/checkout/order/history`, {
                 credentials: "include",
                 method: "GET",
             });

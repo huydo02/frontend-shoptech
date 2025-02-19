@@ -28,7 +28,7 @@ const DetailProduct = () => {
     try {
         useEffect(() => {
             const fetchApi = async () => {
-                await fetch(`https://backend-shoptech.onrender.com//products/detail/${slug.slugProduct}`, {
+                await fetch(`https://backend-shoptech.onrender.com/products/detail/${slug.slugProduct}`, {
                     method: 'GET',
                 })
                     .then(res => res.json())

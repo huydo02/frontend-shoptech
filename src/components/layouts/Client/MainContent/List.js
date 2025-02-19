@@ -29,7 +29,7 @@ const ProductsList = () => {
         setLoading(true);
         try {
             const response = await fetch(
-                `https://backend-shoptech.onrender.com//products/${slug.slug}?filter=${filter}`, // Thêm filter
+                `https://backend-shoptech.onrender.com/products/${slug.slug}?filter=${filter}`, // Thêm filter
                 { method: 'GET' }
             );
             const data = await response.json();

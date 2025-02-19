@@ -16,7 +16,7 @@ const OrderDetail = () => {
     const idOrder = useParams();
     const fetchApi = async () => {
         try {
-            const response = await fetch(`https://backend-shoptech.onrender.com//admin/orders/detail/${idOrder.id}`);
+            const response = await fetch(`https://backend-shoptech.onrender.com/admin/orders/detail/${idOrder.id}`);
             const data = await response.json();
             // setOrders(data.dataOrders);
             setOrders([data.dataOrders]);
