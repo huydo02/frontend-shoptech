@@ -22,7 +22,7 @@ const Build = () => {
     const dispatch = useDispatch();
     const fetchApi = async () => {
         try {
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//build/categories`, {
+            const response = await fetch(`https://backend-shoptech.onrender.com//build/categories`, {
                 credentials: "include",
                 method: "GET",
             });
@@ -35,7 +35,7 @@ const Build = () => {
     };
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//build`, {
+            const response = await fetch(`https://backend-shoptech.onrender.com//build`, {
                 credentials: "include",
                 method: "GET",
             });
@@ -48,7 +48,7 @@ const Build = () => {
         }
     };
     const fetchSort = async (child, filter = '') => {
-        const response = await fetch(`http://https://backend-shoptech.onrender.com//build/categories/${child}?filter=${filter}`, {
+        const response = await fetch(`https://backend-shoptech.onrender.com//build/categories/${child}?filter=${filter}`, {
             credentials: "include",
             method: "GET",
         });
@@ -73,7 +73,7 @@ const Build = () => {
                 productId: dataproduct._id,
                 quantity: 1,
             };
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//build/add/`, {
+            const response = await fetch(`https://backend-shoptech.onrender.com//build/add/`, {
                 credentials: "include",
                 method: "POST",
                 headers: {
@@ -99,7 +99,7 @@ const Build = () => {
             productId: dataproduct._id,
 
         };
-        const response = await fetch(`http://https://backend-shoptech.onrender.com//build/remove/`, {
+        const response = await fetch(`https://backend-shoptech.onrender.com//build/remove/`, {
             credentials: "include",
             method: "DELETE",
             headers: {
@@ -156,7 +156,7 @@ const Build = () => {
     const hanldeAddToCart = async () => {
         if (databuild.length > 0) {
             try {
-                const response = await fetch(`http://https://backend-shoptech.onrender.com//build/add-to-cart`, {
+                const response = await fetch(`https://backend-shoptech.onrender.com//build/add-to-cart`, {
                     credentials: "include",
                     method: "GET",
                 });
@@ -183,7 +183,7 @@ const Build = () => {
     const handleRemoveBuild = async () => {
         if (databuild.length > 0) {
             try {
-                const response = await fetch(`http://https://backend-shoptech.onrender.com//build/remove-build`, {
+                const response = await fetch(`https://backend-shoptech.onrender.com//build/remove-build`, {
                     credentials: "include",
                     method: "DELETE",
                 });

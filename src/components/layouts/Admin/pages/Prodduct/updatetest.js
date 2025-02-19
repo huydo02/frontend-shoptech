@@ -37,7 +37,7 @@ const UpdateProduct = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const data = await fetch(`http://https://backend-shoptech.onrender.com//admin/list-product/edit/${id_product.id}`);
+                const data = await fetch(`https://backend-shoptech.onrender.com//admin/list-product/edit/${id_product.id}`);
                 const result = await data.json();
 
                 if (result.status === 'success') {
@@ -112,7 +112,7 @@ const UpdateProduct = () => {
         });
 
         try {
-            const res = await fetch(`http://https://backend-shoptech.onrender.com//admin/list-product/edit/${id_product.id}`, {
+            const res = await fetch(`https://backend-shoptech.onrender.com//admin/list-product/edit/${id_product.id}`, {
                 method: "PATCH",
                 body: formData,
             });

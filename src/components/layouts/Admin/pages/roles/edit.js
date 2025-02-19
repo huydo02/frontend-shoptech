@@ -16,7 +16,7 @@ const RoleEdit = () => {
         // Giả sử bạn gọi API để lấy dữ liệu từ DB
         const fetchData = async () => {
             try {
-                const data = await fetch(`http://https://backend-shoptech.onrender.com//admin/roles/edit/${id.id}`);
+                const data = await fetch(`https://backend-shoptech.onrender.com//admin/roles/edit/${id.id}`);
                 const result = await data.json();
 
                 // Cập nhật giá trị form với dữ liệu từ DB
@@ -41,7 +41,7 @@ const RoleEdit = () => {
     const onFinish = async (values) => {
         // console.log('Success:', values);
         try {
-            const res = await fetch(`http://https://backend-shoptech.onrender.com//admin/roles/edit/${id.id}`, {
+            const res = await fetch(`https://backend-shoptech.onrender.com//admin/roles/edit/${id.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

@@ -14,7 +14,7 @@ const OrderSuccess = () => {
     console.log(id);
     const fetchApi = async () => {
         try {
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//checkout/success/${id.orderId}`, {
+            const response = await fetch(`https://backend-shoptech.onrender.com//checkout/success/${id.orderId}`, {
                 credentials: "include",
                 method: "GET",
             });

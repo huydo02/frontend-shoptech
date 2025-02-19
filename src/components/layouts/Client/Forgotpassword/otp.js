@@ -10,7 +10,7 @@ const Otp = () => {
     const onFinish = async (values) => {
         console.log('Success:', values);
         try {
-            const res = await fetch("http://https://backend-shoptech.onrender.com//auth/password/otp", {
+            const res = await fetch("https://backend-shoptech.onrender.com//auth/password/otp", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

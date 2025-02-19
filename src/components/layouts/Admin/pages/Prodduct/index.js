@@ -176,7 +176,7 @@ const Products = () => {
         ...params,
     });
     const fetchApi = async () => {
-        await fetch(`http://https://backend-shoptech.onrender.com//admin/list-product?${qs.stringify(getRandomuserParams(tableParams))}`)
+        await fetch(`https://backend-shoptech.onrender.com//admin/list-product?${qs.stringify(getRandomuserParams(tableParams))}`)
             .then(res => res.json())
             .then(data => {
                 setData(data.products);
@@ -219,7 +219,7 @@ const Products = () => {
     const handleDelete = async (record) => {
         try {
             const response = await fetch(
-                `http://https://backend-shoptech.onrender.com//admin/list-product/delete-product/${record._id}`,
+                `https://backend-shoptech.onrender.com//admin/list-product/delete-product/${record._id}`,
                 { method: 'DELETE' }
             );
             const result = await response.json();
@@ -238,7 +238,7 @@ const Products = () => {
         const newStatus = record.status === 'inactive' ? 'active' : 'inactive';
         try {
             const response = await fetch(
-                `http://https://backend-shoptech.onrender.com//admin/list-product/change-status/${newStatus}/${record._id}`,
+                `https://backend-shoptech.onrender.com//admin/list-product/change-status/${newStatus}/${record._id}`,
                 { method: 'PATCH' }
             );
             const result = await response.json();

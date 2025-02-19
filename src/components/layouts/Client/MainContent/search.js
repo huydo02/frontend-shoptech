@@ -33,7 +33,7 @@ const Search = () => {
         setLoading(true);
         try {
             const response = await fetch(
-                `http://https://backend-shoptech.onrender.com//search?query=${query}&filter=${filter}`, // Thêm filter
+                `https://backend-shoptech.onrender.com//search?query=${query}&filter=${filter}`, // Thêm filter
                 { method: 'GET' }
             );
             const data = await response.json();

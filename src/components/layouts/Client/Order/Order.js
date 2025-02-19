@@ -18,7 +18,7 @@ const Order = () => {
     const navigate = useNavigate();
     useEffect(() => {
         const fetchApi = async () => {
-            await fetch("http://https://backend-shoptech.onrender.com//checkout", {
+            await fetch("https://backend-shoptech.onrender.com//checkout", {
                 method: "GET",
                 credentials: "include",
             })
@@ -37,7 +37,7 @@ const Order = () => {
         // console.log('Success:', values);
         console.log(dataOrder)
         try {
-            const res = await fetch("http://https://backend-shoptech.onrender.com//checkout/order", {
+            const res = await fetch("https://backend-shoptech.onrender.com//checkout/order", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

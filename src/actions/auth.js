@@ -2,7 +2,7 @@ import { AUTH_LOGIN, GET_INFO_USER, AUTH_REGISTER, AUTH_LOGOUT } from "./type";
 
 export const authLogin = (data) => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//auth/login`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -32,7 +32,7 @@ export const authLogin = (data) => async (dispatch) => {
 };
 export const authRegister = (data) => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//auth/register`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//auth/register`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -62,7 +62,7 @@ export const authRegister = (data) => async (dispatch) => {
 
 export const authLogout = () => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//auth/logout`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//auth/logout`, {
             method: "GET",
             credentials: "include",
         })
@@ -87,7 +87,7 @@ export const authLogout = () => async (dispatch) => {
 };
 export const getUserInfo = () => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//auth/info`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//auth/info`, {
             method: "GET",
             // headers: {
             //     "Content-Type": "application/json",

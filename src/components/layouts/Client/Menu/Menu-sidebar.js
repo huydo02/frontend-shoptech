@@ -8,7 +8,7 @@ const MenuSibar = () => {
 
     useEffect(() => {
         const fetchApi = async () => {
-            await fetch("http://https://backend-shoptech.onrender.com//menu")
+            await fetch("https://backend-shoptech.onrender.com//menu")
                 .then(res => res.json())
                 .then(data => {
                     setData(data);

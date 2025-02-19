@@ -10,7 +10,7 @@ const AccountsCreate = () => {
     const [error, setError] = useState('');
     const role = useSelector((state) => state.admin.roles || {});
     const fetchApi = async () => {
-        await fetch('http://https://backend-shoptech.onrender.com//admin/roles/getpermissions')
+        await fetch('https://backend-shoptech.onrender.com//admin/roles/getpermissions')
             .then(res => res.json()
                 .then(data => {
                     setPermissions(data.dataPermisstions);
@@ -24,7 +24,7 @@ const AccountsCreate = () => {
     const onFinish = async (values) => {
         console.log('Success:', values);
         try {
-            const res = await fetch("http://https://backend-shoptech.onrender.com//admin/accounts/create", {
+            const res = await fetch("https://backend-shoptech.onrender.com//admin/accounts/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

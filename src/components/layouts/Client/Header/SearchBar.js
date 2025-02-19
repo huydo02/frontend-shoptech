@@ -16,7 +16,7 @@ const SearchBar = () => {
     const fetchData = async () => {
         setLoading(true);
         try {
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//search/live?live=${query}`);
+            const response = await fetch(`https://backend-shoptech.onrender.com//search/live?live=${query}`);
             const data = await response.json();
             setCharacters(data.data);
         } catch (error) {

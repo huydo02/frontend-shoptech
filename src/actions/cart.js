@@ -1,7 +1,7 @@
 import { ADD_TO_CART, GET_CART_ITEM, UPDATE_CART_ITEM, REMOVE_CART_ITEM, EMPTY_CART } from "./type";
 export const addToCart = (data) => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//cart/add/${data.productId}`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//cart/add/${data.productId}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -31,7 +31,7 @@ export const addToCart = (data) => async (dispatch) => {
 
 export const getCartItem = () => async (dispatch) => {
     try {
-        const result = await fetch("http://https://backend-shoptech.onrender.com//cart/cartQuantity", {
+        const result = await fetch("https://backend-shoptech.onrender.com//cart/cartQuantity", {
             method: "GET",
             credentials: "include",
         })
@@ -56,7 +56,7 @@ export const getCartItem = () => async (dispatch) => {
 
 export const updateCart = (data) => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//cart/update/${data.productId}/${data.quantity}`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//cart/update/${data.productId}/${data.quantity}`, {
             method: "PATCH",
             headers: {
                 "Content-Type": "application/json",
@@ -86,7 +86,7 @@ export const updateCart = (data) => async (dispatch) => {
 
 export const removeCart = (productId) => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//cart/delete/${productId}`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//cart/delete/${productId}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json",

@@ -16,7 +16,7 @@ const AccountsEdit = () => {
 
     const fetchApi = async () => {
         try {
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//admin/accounts/edit/${idAccount.id}`);
+            const response = await fetch(`https://backend-shoptech.onrender.com//admin/accounts/edit/${idAccount.id}`);
             const data = await response.json();
             if (data.status === 'success') {
                 console.log(data.data.email)
@@ -43,7 +43,7 @@ const AccountsEdit = () => {
     const onFinish = async (values) => {
         console.log('Success:', values);
         try {
-            const res = await fetch(`http://https://backend-shoptech.onrender.com//admin/accounts/edit/${idAccount.id}`, {
+            const res = await fetch(`https://backend-shoptech.onrender.com//admin/accounts/edit/${idAccount.id}`, {
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json",

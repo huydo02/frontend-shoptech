@@ -3,7 +3,7 @@ import Cookies from "js-cookie";
 
 export const adminLogin = (data) => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//admin/auth/login`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//admin/auth/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -56,7 +56,7 @@ export const adminLogout = () => async (dispatch) => {
 };
 export const getAdminInfo = () => async (dispatch) => {
     try {
-        const result = await fetch(`http://https://backend-shoptech.onrender.com//admin/auth/info`, {
+        const result = await fetch(`https://backend-shoptech.onrender.com//admin/auth/info`, {
             method: "GET",
             credentials: "include",
         })

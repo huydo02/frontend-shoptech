@@ -14,7 +14,7 @@ const RolesTable = () => {
 
     const fetchApi = async () => {
         try {
-            const response = await fetch(`http://https://backend-shoptech.onrender.com//admin/roles`);
+            const response = await fetch(`https://backend-shoptech.onrender.com//admin/roles`);
             const data = await response.json();
             setDataRoles(data.dataRoles);
             setLoading(false);
@@ -31,7 +31,7 @@ const RolesTable = () => {
     const handleDelete = async (record) => {
         try {
             const response = await fetch(
-                `http://https://backend-shoptech.onrender.com//admin/roles/delete/${record._id}`,
+                `https://backend-shoptech.onrender.com//admin/roles/delete/${record._id}`,
                 {
                     method: 'PATCH'
                 }

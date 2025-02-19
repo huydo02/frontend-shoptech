@@ -12,7 +12,7 @@ const RoleCreate = () => {
     const onFinish = async (values) => {
         // console.log('Success:', values);
         try {
-            const res = await fetch("http://https://backend-shoptech.onrender.com//admin/roles/create", {
+            const res = await fetch("https://backend-shoptech.onrender.com//admin/roles/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

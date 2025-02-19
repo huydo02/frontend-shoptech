@@ -17,7 +17,7 @@ const Home = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         const fetchApi = async () => {
-            await fetch("http://https://backend-shoptech.onrender.com/")
+            await fetch("https://backend-shoptech.onrender.com/")
                 .then(res => res.json())
                 .then(data => {
                     setData(data)

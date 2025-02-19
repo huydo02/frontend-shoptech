@@ -15,7 +15,7 @@ const Permissions = () => {
     const dispatch = useDispatch();
     const role = useSelector((state) => state.admin.roles || {});
     const fetchApi = async () => {
-        await fetch('http://https://backend-shoptech.onrender.com//admin/roles/getpermissions')
+        await fetch('https://backend-shoptech.onrender.com//admin/roles/getpermissions')
             .then(res => res.json()
                 .then(data => {
                     setPermissions(data.dataPermisstions);
@@ -70,7 +70,7 @@ const Permissions = () => {
         // console.log('handleChangePermissions:', dataChecked);
         try {
             const response = await fetch(
-                `http://https://backend-shoptech.onrender.com//admin/roles/permissions`,
+                `https://backend-shoptech.onrender.com//admin/roles/permissions`,
                 {
                     method: 'PATCH',
                     body: JSON.stringify(dataChecked),
